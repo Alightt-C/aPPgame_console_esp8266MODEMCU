@@ -1,2 +1,85 @@
+<img width="240" height="150" alt="aPPgame_scheme" src="https://github.com/user-attachments/assets/cdf8fcc3-df58-487b-a904-17267ad98d21" />
 # aPPgame_console_esp8266MODEMCU
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" style="background-color: #1e1e1e; font-family: Arial, sans-serif;">
+  <!-- Title -->
+  <text x="400" y="35" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">Схема підключення: ESP8266 + OLED SSD1306 + 4 Кнопки</text>
+
+  <!-- ESP8266 Board -->
+  <rect x="300" y="80" width="200" height="360" rx="10" fill="#2d3748" stroke="#4a5568" stroke-width="3"/>
+  <rect x="340" y="90" width="120" height="100" fill="#cbd5e0" rx="4"/>
+  <text x="400" y="145" fill="#2d3748" font-size="16" font-weight="bold" text-anchor="middle">ESP8266</text>
+  <text x="400" y="165" fill="#4a5568" font-size="12" text-anchor="middle">NodeMCU</text>
+  
+  <!-- ESP Pins Left -->
+  <text x="310" y="220" fill="#a0aec0" font-size="12">3V3</text>
+  <text x="310" y="260" fill="#a0aec0" font-size="12">GND</text>
+  <text x="310" y="300" fill="#a0aec0" font-size="12">D1 (SCL)</text>
+  <text x="310" y="340" fill="#a0aec0" font-size="12">D2 (SDA)</text>
+  
+  <!-- ESP Pins Right -->
+  <text x="490" y="220" fill="#a0aec0" font-size="12" text-anchor="end">D5 (UP)</text>
+  <text x="490" y="260" fill="#a0aec0" font-size="12" text-anchor="end">D6 (DOWN)</text>
+  <text x="490" y="300" fill="#a0aec0" font-size="12" text-anchor="end">D7 (LEFT)</text>
+  <text x="490" y="340" fill="#a0aec0" font-size="12" text-anchor="end">D4 (RIGHT)</text>
+
+  <!-- Pin Dots -->
+  <circle cx="300" cy="216" r="5" fill="#e53e3e"/>
+  <circle cx="300" cy="256" r="5" fill="#4a5568"/>
+  <circle cx="300" cy="296" r="5" fill="#ecc94b"/>
+  <circle cx="300" cy="336" r="5" fill="#4299e1"/>
+
+  <circle cx="500" cy="216" r="5" fill="#48bb78"/>
+  <circle cx="500" cy="256" r="5" fill="#ed8936"/>
+  <circle cx="500" cy="296" r="5" fill="#9f7aea"/>
+  <circle cx="500" cy="336" r="5" fill="#ed64a6"/>
+
+  <!-- OLED Display -->
+  <rect x="50" y="180" width="160" height="140" rx="6" fill="#1a202c" stroke="#319795" stroke-width="3"/>
+  <rect x="65" y="220" width="130" height="80" fill="#000000" stroke="#4a5568" stroke-width="1"/>
+  <text x="130" y="265" fill="#00fff5" font-size="12" font-weight="bold" text-anchor="middle">OLED 128x64</text>
+  
+  <!-- OLED Pins -->
+  <circle cx="80" cy="180" r="4" fill="#e53e3e"/><text x="80" y="170" fill="#ffffff" font-size="10" text-anchor="middle">VCC</text>
+  <circle cx="110" cy="180" r="4" fill="#4a5568"/><text x="110" y="170" fill="#ffffff" font-size="10" text-anchor="middle">GND</text>
+  <circle cx="140" cy="180" r="4" fill="#ecc94b"/><text x="140" y="170" fill="#ffffff" font-size="10" text-anchor="middle">SCL</text>
+  <circle cx="170" cy="180" r="4" fill="#4299e1"/><text x="170" y="170" fill="#ffffff" font-size="10" text-anchor="middle">SDA</text>
+
+  <!-- Wires to OLED -->
+  <path d="M 80 180 L 80 140 L 260 140 L 260 216 L 300 216" fill="none" stroke="#e53e3e" stroke-width="2"/>
+  <path d="M 110 180 L 110 150 L 250 150 L 250 256 L 300 256" fill="none" stroke="#a0aec0" stroke-width="2"/>
+  <path d="M 140 180 L 140 160 L 240 160 L 240 296 L 300 296" fill="none" stroke="#ecc94b" stroke-width="2"/>
+  <path d="M 170 180 L 170 170 L 230 170 L 230 336 L 300 336" fill="none" stroke="#4299e1" stroke-width="2"/>
+
+  <!-- Buttons -->
+  <!-- UP -->
+  <rect x="600" y="120" width="50" height="50" rx="5" fill="#4a5568" stroke="#cbd5e0" stroke-width="2"/>
+  <circle cx="625" cy="145" r="15" fill="#48bb78"/>
+  <text x="660" y="150" fill="#ffffff" font-size="12" font-weight="bold">BTN UP (D5)</text>
+  <path d="M 500 216 L 570 216 L 570 145 L 600 145" fill="none" stroke="#48bb78" stroke-width="2"/>
+
+  <!-- DOWN -->
+  <rect x="600" y="190" width="50" height="50" rx="5" fill="#4a5568" stroke="#cbd5e0" stroke-width="2"/>
+  <circle cx="625" cy="215" r="15" fill="#ed8936"/>
+  <text x="660" y="220" fill="#ffffff" font-size="12" font-weight="bold">BTN DOWN (D6)</text>
+  <path d="M 500 256 L 600 256" fill="none" stroke="#ed8936" stroke-width="2"/>
+
+  <!-- LEFT -->
+  <rect x="600" y="260" width="50" height="50" rx="5" fill="#4a5568" stroke="#cbd5e0" stroke-width="2"/>
+  <circle cx="625" cy="285" r="15" fill="#9f7aea"/>
+  <text x="660" y="290" fill="#ffffff" font-size="12" font-weight="bold">BTN LEFT (D7)</text>
+  <path d="M 500 296 L 570 296 L 570 285 L 600 285" fill="none" stroke="#9f7aea" stroke-width="2"/>
+
+  <!-- RIGHT -->
+  <rect x="600" y="330" width="50" height="50" rx="5" fill="#4a5568" stroke="#cbd5e0" stroke-width="2"/>
+  <circle cx="625" cy="355" r="15" fill="#ed64a6"/>
+  <text x="660" y="360" fill="#ffffff" font-size="12" font-weight="bold">BTN RIGHT (D4)</text>
+  <path d="M 500 336 L 560 336 L 560 355 L 600 355" fill="none" stroke="#ed64a6" stroke-width="2"/>
+
+  <!-- Ground Line for Buttons -->
+  <path d="M 300 256 L 250 256 L 250 430 L 730 430 L 730 145 L 650 145" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M 730 215 L 650 215" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M 730 285 L 650 285" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M 730 355 L 650 355" fill="none" stroke="#a0aec0" stroke-width="2" stroke-dasharray="4"/>
+  <text x="500" y="450" fill="#a0aec0" font-size="12" text-anchor="middle">--- Другі контакти всіх кнопок об'єднані та підключені до GND ---</text>
+</svg>
 Game console based on ESP8266 NodeMCU and an OLED display
