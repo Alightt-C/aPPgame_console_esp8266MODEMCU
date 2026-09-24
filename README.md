@@ -21,4 +21,4 @@ ESP8266 + OLED SSD1306 + 4 Buttons
 * **BTN LEFT:** `D7`
 * **BTN RIGHT:** `D4`
 
-> **Note:** The second pins of all buttons are connected together and wired to `GND`
+--- The second contacts of all buttons are connected together and wired to GND ---
